@@ -1,4 +1,4 @@
-# mini_https
+# mini-https
 
 A **minimal self-contained HTTPS server** written in C using **libmicrohttpd** and **OpenSSL**.  
 It automatically generates a self-signed certificate (if none exists) and serves a **simple chat interface** on HTTPS.
@@ -41,15 +41,15 @@ sudo pacman -S libmicrohttpd openssl
 ### 2. Clone and Build
 
 ```bash
-git clone https://github.com/<your-username>/mini_https.git
-cd mini_https
-cc mini_https.c -o mini_https -lmicrohttpd -lssl -lcrypto
+git clone https://github.com/<your-username>/mini-https.git
+cd mini-https
+cc mini-https.c -o mini-https -lmicrohttpd -lssl -lcrypto
 ```
 
 ### 3. Run
 
 ```bash
-./mini_https
+./mini-https
 ```
 - On first run, this will generate `cert.pem` and `key.pem` in your current directory if they don't already exist.
 
